@@ -34,7 +34,7 @@ public class introduccionPOO {
 		//lo mismo pero al reves
 		
 		for (int i=texto.length()-1;i>=0;i--) {
-			System.out.println(texto.charAt(i)); // (respetando tu estructura original)
+			System.out.println(texto.charAt(i)); 
 		}
 		
 		String textoNormal="hola";
