@@ -14,8 +14,6 @@ public class introduccionPOO {
 		System.out.println(texto1);
 		System.out.println(texto2);
 		
-		
-		
 		System.out.println(texto1==texto2);
 		
 		System.out.println(texto1.equals(texto2));
@@ -26,11 +24,8 @@ public class introduccionPOO {
 		
 		String texto;
 		
-		
-		
 		System.out.println("Introduce un texto");
 		texto = entrada.nextLine();
-		
 		
 		for (int i=0;i<texto.length();i++) {
 			System.out.println(texto.charAt(i));
@@ -39,9 +34,8 @@ public class introduccionPOO {
 		//lo mismo pero al reves
 		
 		for (int i=texto.length()-1;i>=0;i--) {
-			System.out.println(texto.charAt(i));
-			
-	}
+			System.out.println(texto.charAt(i)); // (respetando tu estructura original)
+		}
 		
 		String textoNormal="hola";
 		String textoAlreves="";
@@ -49,37 +43,26 @@ public class introduccionPOO {
 		for (int i=textoAlreves.length()-1;i>=0;i--) {
 			System.out.println(textoAlreves + textoNormal.charAt(i));
 			i = i+1;
-			}
+		}
 		
 		System.out.println(textoAlreves);
 
-}
-	{
+		texto1="ala";
+		texto2="";
 		
-	}
-	
-	{
-	
-		//para que nos muestre el mismo texto pero al reves letra por letra
-	
-	String texto1="hola";
-	String texto2="";
-	
-	for (int i=texto1.length()-1;i>=0;i--) {
-		texto1 = texto2 + texto1.charAt(i);
-	}
-	
-	
-	System.out.println(texto2);
-	
-	if (texto1.equals(texto2)) {
-		System.out.println("Es un palíndromo");
+		for (int i=texto1.length()-1;i>=0;i--) {
+			texto2 = texto2 + texto1.charAt(i);
+		}
 		
-	} else {
-		System.out.println(texto1 + "No es un palindromo ");
+		System.out.println(texto2);
+		
+		if (texto1.equals(texto2)) {
+			System.out.println("Es un palíndromo");
+			
+		} else {
+			System.out.println(texto1 + " No es un palindromo ");
+		}
 
 	}
-	
-}
 	
 }
